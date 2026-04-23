@@ -18,6 +18,12 @@ import { loadRemoteModule } from '@angular-architects/module-federation';
  */
 export const routes: Routes = [
 
+  {
+    path: '',
+    redirectTo: 'users',
+    pathMatch: 'full',
+  },
+
   /**
    * Ruta de usuarios.
    *
@@ -49,6 +55,16 @@ export const routes: Routes = [
                 remoteEntry: 'http://localhost:4202/remoteEntry.js',
                 exposedModule: './ProductsPage',
         }).then(m => m.ProductsPage),
+    },
+
+    {
+      path: 'stock',
+      loadComponent: () =>
+        loadRemoteModule({
+          type: 'module',
+          remoteEntry: 'http://localhost:4203/remoteEntry.js',
+          exposedModule: './StockPage',
+      }).then(m => m.StockPage),
     },
 
   /**
