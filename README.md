@@ -22,9 +22,11 @@ Puedes verificar Angular CLI en consola con: ```ng version```
 - Ubícate en la raíz del proyecto de Client-Host-Angular y ejecuta el comando: ```npm i```
 - Ubícate en la raíz del proyecto de Microfrontend-Users-Angular y ejecuta el comando: ```npm i```
 - Ubícate en la raíz del proyecto de Microfrontend-Products-Angular y ejecuta el comando: ```npm i```
-- Ubícate en la raíz del proyecto de Micronfrontend-Orders-Angular y ejecuta el comando: ```npm i```
+- Ubícate en la raíz del proyecto de Micronfrontend-Stock-Angular y ejecuta el comando: ```npm i```
 - Ubícate en la raíz del proyecto de Microservice-Users-NodeJS y ejecuta el comando: ```npm i```
 - Ubícate en la raíz del proyecto de Microservice-Products-NodeJS y ejecuta el comando: ```npm i```
+- Ubícate en la raíz del proyecto de Microservice-Stock-NodeJS y ejecuta el comando: ```npm i```
+- Ubícate en la raíz del proyecto de Micronfrontend-Orders-Angular y ejecuta el comando: ```npm i```
 - Ubícate en la raíz del proyecto de Microservice-Orders-NodeJS y ejecuta el comando: ```npm i```
 
 
@@ -32,9 +34,11 @@ Puedes verificar Angular CLI en consola con: ```ng version```
 
 - Ubícate en la raíz del proyecto de Microservice-Users-NodeJS y ejecuta el comando: ```npm run start```
 - Ubícate en la raíz del proyecto de Microservice-Products-NodeJS y ejecuta el comando: ```npm run start```
-- Ubícate en la raíz del proyecto de Microservice-Orders-NodeJS y ejecuta el comando: ```npm run start```
+- Ubícate en la raíz del proyecto de Microservice-Stock-NodeJS y ejecuta el comando: ```npm run start```
 - Ubícate en la raíz del proyecto de Microfrontend-Users-Angular y ejecuta el comando: ```npm run start```
 - Ubícate en la raíz del proyecto de Microfrontend-Products-Angular y ejecuta el comando: ```npm run start```
+- Ubícate en la raíz del proyecto de Micronfrontend-Stock-Angular y ejecuta el comando: ```npm run start```
+- Ubícate en la raíz del proyecto de Microservice-Orders-NodeJS y ejecuta el comando: ```npm run start```
 - Ubícate en la raíz del proyecto de Micronfrontend-Orders-Angular y ejecuta el comando: ```npm run start```
 - Ubícate en la raíz del proyecto de Client-Host-Angular y ejecuta el comando: ```npm run start```
 
@@ -64,9 +68,17 @@ Puedes verificar Angular CLI en consola con: ```ng version```
 - Corriendo en: ```http://localhost:4202```
 - RemoteEntry: ```http://localhost:4202/remoteEntry.js```
 
-#### Micronfrontend-Orders-Angular
+#### Micronfrontend-Stock-Angular
 - Corriendo en: ```http://localhost:4203```
 - RemoteEntry: ```http://localhost:4203/remoteEntry.js```
 
+#### Microservice-Stock-NodeJS
+- Corriendo en: ```http://localhost:3003```
+- Swagger API Docs: ```http://localhost:3003/api/docs```
+- API Stock: ```http://localhost:3003/api/stock/{countStock}```
+
+#### Micronfrontend-Orders-Angular
+- Corriendo en: ```http://localhost:4203```
+- RemoteEntry: ```http://localhost:4203/remoteEntry.js```
 #### Client-Host-Angular
 - Corriendo en: ```http://localhost:4200```

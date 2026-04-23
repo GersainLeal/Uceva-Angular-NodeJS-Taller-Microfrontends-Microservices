@@ -1,0 +1,15 @@
+@switch(state){
+
+    @case('loading'){
+        <app-alert alertState="loading" text="Cargando inventario..." ></app-alert>
+    }
+
+    @case('error'){
+        <app-alert alertState="error" text="Error al cargar el inventario" ></app-alert>
+    }
+
+    @case('success'){
+        <app-stock-table [stock]="stock" ></app-stock-table>
+    }
+
+}

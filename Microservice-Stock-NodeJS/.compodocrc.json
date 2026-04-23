@@ -1,0 +1,15 @@
+{
+  "tsconfig": "tsconfig.compodoc.json",
+  "outputPath": "./compodoc",
+  "theme": "gitbook",
+  "hideGenerator": false,
+  "disableDependencies": false,
+  "disablePrivate": false,
+  "disableProtected": false,
+  "disableInternal": false,
+  "disableLifeCycleHooks": false,
+  "disableRoutesDocumentation": false,
+  "customFavicon": null,
+  "name": "Microservice Stock NodeJS",
+  "readme": "./README.md"
+}

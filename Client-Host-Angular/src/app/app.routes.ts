@@ -18,6 +18,12 @@ import { loadRemoteModule } from '@angular-architects/module-federation';
  */
 export const routes: Routes = [
 
+  {
+    path: '',
+    redirectTo: 'users',
+    pathMatch: 'full',
+  },
+
   /**
    * Ruta de usuarios.
    *
@@ -51,22 +57,39 @@ export const routes: Routes = [
         }).then(m => m.ProductsPage),
     },
 
-    /**
-     * Ruta de ordenes.
-     *
-     * @remarks
-     * Renderiza el componente `OrdersPage`, encargado
-     * de mostrar y gestionar el listado de ordenes.
-     */
-    {
-      path: 'orders',
-      loadComponent: () =>
-        loadRemoteModule({
-          type: 'module',
-          remoteEntry: 'http://localhost:4203/remoteEntry.js',
-          exposedModule: './OrdersPage',
+  /**
+   * Ruta de ordenes.
+   *
+   * @remarks
+   * Renderiza el componente `OrdersPage`, encargado
+   * de mostrar y gestionar el listado de ordenes.
+   */
+  {
+    path: 'orders',
+    loadComponent: () =>
+      loadRemoteModule({
+        type: 'module',
+        remoteEntry: 'http://localhost:4203/remoteEntry.js',
+        exposedModule: './OrdersPage',
       }).then(m => m.OrdersPage),
-    },
+  },
+
+  /**
+   * Ruta de stock.
+   *
+   * @remarks
+   * Renderiza el componente `StockPage`, encargado
+   * de mostrar y gestionar el inventario.
+   */
+  {
+    path: 'stock',
+    loadComponent: () =>
+      loadRemoteModule({
+        type: 'module',
+        remoteEntry: 'http://localhost:4203/remoteEntry.js',
+        exposedModule: './StockPage',
+      }).then(m => m.StockPage),
+  },
 
   /**
    * Ruta comodín.
