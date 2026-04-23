@@ -2,7 +2,7 @@
 
 - Este proyecto fue generado utilizando [Angular CLI](https://github.com/angular/angular-cli) 20.3.14.
 
-- El objetivo del taller es practicar la creación de 2 proyectos para representar la arquitectura
+- El objetivo del taller es practicar la creación de 3 proyectos para representar la arquitectura
 cliente servidor, con las Tecnologias de Angular y NodeJS.
 
 ## 📋 Requisitos Previos
@@ -26,6 +26,8 @@ Puedes verificar Angular CLI en consola con: ```ng version```
 - Ubícate en la raíz del proyecto de Microservice-Users-NodeJS y ejecuta el comando: ```npm i```
 - Ubícate en la raíz del proyecto de Microservice-Products-NodeJS y ejecuta el comando: ```npm i```
 - Ubícate en la raíz del proyecto de Microservice-Stock-NodeJS y ejecuta el comando: ```npm i```
+- Ubícate en la raíz del proyecto de Micronfrontend-Orders-Angular y ejecuta el comando: ```npm i```
+- Ubícate en la raíz del proyecto de Microservice-Orders-NodeJS y ejecuta el comando: ```npm i```
 
 
 ### 2️⃣ Ejecutar los Proyectos
@@ -36,6 +38,8 @@ Puedes verificar Angular CLI en consola con: ```ng version```
 - Ubícate en la raíz del proyecto de Microfrontend-Users-Angular y ejecuta el comando: ```npm run start```
 - Ubícate en la raíz del proyecto de Microfrontend-Products-Angular y ejecuta el comando: ```npm run start```
 - Ubícate en la raíz del proyecto de Micronfrontend-Stock-Angular y ejecuta el comando: ```npm run start```
+- Ubícate en la raíz del proyecto de Microservice-Orders-NodeJS y ejecuta el comando: ```npm run start```
+- Ubícate en la raíz del proyecto de Micronfrontend-Orders-Angular y ejecuta el comando: ```npm run start```
 - Ubícate en la raíz del proyecto de Client-Host-Angular y ejecuta el comando: ```npm run start```
 
 
@@ -50,6 +54,11 @@ Puedes verificar Angular CLI en consola con: ```ng version```
 - Corriendo en: ```http://localhost:3002```
 - Swagger API Docs: ```http://localhost:3002/api/docs```
 - API Products: ```http://localhost:3002/api/users/{countProducts}```
+
+#### Microservice-Orders-NodeJS
+- Corriendo en: ```http://localhost:3003```
+- Swagger API Docs: ```http://localhost:3003/api/docs```
+- API Orders: ```http://localhost:3003/api/orders/{countOrders}```
 
 #### Microfrontend-Users-Angular
 - Corriendo en: ```http://localhost:4201```
@@ -68,5 +77,8 @@ Puedes verificar Angular CLI en consola con: ```ng version```
 - Swagger API Docs: ```http://localhost:3003/api/docs```
 - API Stock: ```http://localhost:3003/api/stock/{countStock}```
 
+#### Micronfrontend-Orders-Angular
+- Corriendo en: ```http://localhost:4203```
+- RemoteEntry: ```http://localhost:4203/remoteEntry.js```
 #### Client-Host-Angular
 - Corriendo en: ```http://localhost:4200```
