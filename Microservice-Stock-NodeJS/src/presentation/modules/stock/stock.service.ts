@@ -1,7 +1,13 @@
 import { faker } from "@faker-js/faker";
 import { Stock, StockStatus, StockWarehouse } from "../../../domain/interfaces/stock.interface";
 
+/**
+ * Servicio encargado de generar stock ficticio.
+ */
 export class StockService {
+  /**
+   * Conjunto de bodegas candidatas para ubicar inventario.
+   */
   private readonly warehouses: StockWarehouse[] = [
     "Central",
     "Norte",
@@ -9,6 +15,12 @@ export class StockService {
     "Occidente",
   ];
 
+  /**
+   * Genera una lista de registros de stock.
+   *
+   * @param countStock Cantidad de registros a construir.
+   * @returns Promesa con los registros generados.
+   */
   public async getAllStock(countStock: number): Promise<Stock[]> {
     const stockItems: Promise<Stock>[] = [];
 
@@ -19,6 +31,12 @@ export class StockService {
     return Promise.all(stockItems);
   }
 
+  /**
+   * Genera un registro de stock para un identificador dado.
+   *
+   * @param id Identificador incremental del registro.
+   * @returns Promesa con la informacion de stock generada.
+   */
   private generateStock(id: number): Promise<Stock> {
     const quantity = faker.number.int({ min: 0, max: 100 });
 
@@ -32,6 +50,12 @@ export class StockService {
     });
   }
 
+  /**
+   * Resuelve el estado de inventario a partir de la cantidad disponible.
+   *
+   * @param quantity Unidades disponibles.
+   * @returns Estado calculado para el producto.
+   */
   private resolveStatus(quantity: number): StockStatus {
     if (quantity === 0) {
       return "Agotado";

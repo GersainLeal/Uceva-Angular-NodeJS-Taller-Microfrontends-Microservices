@@ -1,5 +1,8 @@
 import swaggerJsdoc from "swagger-jsdoc";
 
+/**
+ * Especificacion OpenAPI generada a partir de rutas y esquemas del proyecto.
+ */
 export const swaggerSpec = swaggerJsdoc({
   definition: {
     openapi: "3.0.0",

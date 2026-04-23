@@ -1,7 +1,13 @@
 import { Router } from "express";
 import { StockController } from "./stock.controller";
 
+/**
+ * Define las rutas HTTP del módulo de stock.
+ */
 export class StockRoutes {
+  /**
+   * Router listo para ser montado en Express.
+   */
   static get routes(): Router {
     const router = Router();
     const controller = new StockController();

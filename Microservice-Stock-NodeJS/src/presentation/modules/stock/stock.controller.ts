@@ -3,9 +3,21 @@ import { CustomError } from "../../../domain/erros/custom.error";
 import { HandleError } from "../../../domain/erros/handle.error";
 import { StockService } from "./stock.service";
 
+/**
+ * Controlador HTTP del recurso stock.
+ */
 export class StockController {
+  /**
+   * Servicio de dominio encargado de construir la respuesta de stock.
+   */
   private readonly stockService = new StockService();
 
+  /**
+   * Devuelve una lista de stock generada dinámicamente.
+   *
+   * @param req Solicitud HTTP con el parametro countStock.
+   * @param res Respuesta HTTP con la lista de stock o error.
+   */
   getAllStock = (req: Request, res: Response): void => {
     const { countStock } = req.params;
     const parsedCount = Number(countStock);
