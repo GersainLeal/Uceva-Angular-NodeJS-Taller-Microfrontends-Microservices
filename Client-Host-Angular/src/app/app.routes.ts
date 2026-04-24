@@ -86,7 +86,7 @@ export const routes: Routes = [
     loadComponent: () =>
       loadRemoteModule({
         type: 'module',
-        remoteEntry: 'http://localhost:4203/remoteEntry.js',
+        remoteEntry: 'http://localhost:4204/remoteEntry.js',
         exposedModule: './StockPage',
       }).then(m => m.StockPage),
   },

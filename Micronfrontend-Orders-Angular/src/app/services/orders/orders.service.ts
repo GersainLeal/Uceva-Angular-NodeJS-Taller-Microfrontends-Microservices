@@ -43,6 +43,6 @@ export class OrdersService {
    * ```
    */
   getAllOrders(countOrders: number): Observable<Order[]> {
-    return this.httpClient.get<Order[]>(`http://localhost:3003/api/orders/${countOrders}`);
+    return this.httpClient.get<Order[]>(`http://localhost:3004/api/orders/${countOrders}`);
   }
 }
